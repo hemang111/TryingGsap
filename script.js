@@ -33,12 +33,19 @@ tl.to("img",{
     duration:1,
     filter: "blur(10px)"
 })
-tl.from("#main p",{
-    x:-500,
-    opacity: 0,
+tl.to("#main-text  span",{
+    left: "0px",
+    opacity: 1,
     delay : 0.3,
     duration: 0.8,
     easing: "easeInOutQuad",
     stagger: 0.4,
 })
-
+tl.from("#main-text hr",{
+   
+    opacity: 0,
+  
+    duration:0.8,
+    easing: "easeInOutQuad",
+    stagger: 0.3,
+})
